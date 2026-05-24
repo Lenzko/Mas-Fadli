@@ -485,6 +485,9 @@
           Bukan untuk menghukum,
           tetapi untuk menerima kita kembali.
         </p>
+        <button onclick="scrollToMemoryPage()">
+  Foto Kenangan 📸
+</button>
       </div>
 
     </div>
@@ -492,7 +495,108 @@
   </div>
 
 </section>
+<!-- HALAMAN FOTO KENANGAN -->
+<section class="page" id="memoryPage">
 
+  <div class="card">
+
+    <h2>📸 Foto Kenangan 📸</h2>
+
+    <p style="text-align:center;">
+      Sedikit momen yang berhasil tertangkap
+      dan akan selalu jadi kenangan indah ✨
+    </p>
+
+    <!-- FOTO BESAR -->
+    <div class="photo-box">
+
+      <img
+        src="kenangan.jpg"
+        alt="Foto Kenangan">
+
+    </div>
+
+    <!-- CARD -->
+    <div class="memory-card">
+
+      <h3>🌸 Tentang Kenangan 🌸</h3>
+
+      <p>
+        Tidak semua momen bisa diulang,
+        tetapi semua kenangan baik
+        akan selalu tersimpan dengan indah.
+      </p>
+
+      <p>
+        Terima kasih sudah menjadi bagian
+        dari cerita selama masa magang ini 💖
+      </p>
+
+      <p class="highlight">
+        “Beberapa pertemuan mungkin singkat,
+        tetapi kenangannya bisa bertahan lama.”
+      </p>
+
+      <button onclick="scrollToGalleryPage()">
+        Lihat Galeri ✨
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HALAMAN GALERI -->
+<section class="page" id="galleryPage">
+
+  <div class="card">
+
+    <h2>🌷 Galeri Kenangan 🌷</h2>
+
+    <p style="text-align:center;">
+      Beberapa potongan momen yang sederhana,
+      tetapi berharga ✨
+    </p>
+
+    <!-- GRID FOTO -->
+    <div class="gallery-grid">
+
+      <img src="foto1.jpg" alt="Galeri 1">
+
+      <img src="foto2.jpg" alt="Galeri 2">
+
+      <img src="foto3.jpg" alt="Galeri 3">
+
+    </div>
+
+    <!-- CARD KATA -->
+    <div class="memory-card">
+
+      <h3>💖 Terima Kasih 💖</h3>
+
+      <p>
+        Kadang yang membuat sebuah tempat terasa nyaman
+        bukan tempatnya,
+        tetapi orang-orang di dalamnya 🌸
+      </p>
+
+      <p>
+        Terima kasih untuk semua cerita,
+        tawa, bantuan, dan kenangan
+        selama perjalanan magang ini.
+      </p>
+
+      <p class="highlight">
+        “Semoga semua langkah setelah ini
+        dipenuhi hal-hal baik dan membahagiakan.”
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 <script>
 
 let score = 0;
@@ -507,7 +611,13 @@ function scrollToMessage(){
   });
 
 }
+function scrollToMemoryPage(){
 
+  document.getElementById('memoryPage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
 function scrollToGame(){
 
   document.getElementById('gamePage').scrollIntoView({
@@ -590,7 +700,13 @@ function createStar(){
   }, 2000);
 
 }
+function scrollToGalleryPage(){
 
+  document.getElementById('galleryPage').scrollIntoView({
+    behavior:'smooth'
+  });
+
+}
 function showFinishAnimation(){
 
   finishShown = true;
